@@ -1,0 +1,116 @@
+body { background-color: #EEE; }
+h3 { text-align:center;font-weight:bold; }
+h4 { text-align:center;font-weight:bold; }
+h5 { text-align:left;font-weight:bold; }
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader { 'border:16px solid #f3f3f3;border-top:16px solid #3498db;border-radius:50%;
+	width:120px;height: 120px;animation:spin 2s linear infinite; }
+
+.frame1 {background-color:#CCC;border:solid 2px;width:99%;margin:5px;padding:5px; }
+.frame { background-color:#FFF;border:solid 2px;width:1290px;height:490px;position:relative;padding:0px; }
+.frame_row { position:absolute;left:0px;top:2px;
+	border:1px solid;background-color:#DDD;margin:3px;width:1282px;height:40px;font-size:12px; }
+.frame_row_label { font-size:12px;font-weight:bold;margin:8px;padding:0px; }
+.frame_row_sel { margin:2px;padding:0px; }
+.frame_row_div { margin:2px;background-color:#DDD; }
+.frame_row_button { margin:2px; }
+.img_db { width:40px;height:60px;display:block;margin-left:auto;margin-right:auto; }
+.modeling_row { position:absolute;left:80px;top:20px;width:1150px;height:360px;
+	background-color:#FFF;border:solid 1px; }
+.block_div { cursor:pointer;padding:0px;text-align:center; height:150px; }
+.block_div_div { font-weight:normal;cursor:pointer;position:absolute;top:55px;left:20px; }
+.arrow { width:20px;height:10px;position:absolute;top:75px; }
+.db_div { cursor:pointer;padding:0px;text-align:center; height:150px; }
+.db_label { font-weight:normal;text-align:center;padding-left:5px; }
+.process_img { width:95px;height:70px;cursor:pointer;margin-top:45px; }
+.p_filter { font-size:8px;margin-top:0;margin-bottom:0; }
+.p_feature { font-size:8px;margin-top:0;margin-bottom:0; }
+.box_margin { cursor:pointer;position:absolute;left:32px;top:25px;z-index:1;font-weight:normal;text-align:center; }
+.box_copula { font-weight:normal;text-align:center;cursor:pointer;position:absolute;left:245px;top:25px;z-index:1; }
+.box_process { width:85px;height:65px;cursor:pointer;position:absolute;top:15px;left:25px; }
+.box_process1 { cursor:pointer;position:absolute;left:40px;top:25px;z-index:1;font-weight:normal;text-align:center; }
+.box_arrow { width:15px;height:10px;position:absolute;top:43px;left:5px; }
+.example { font-size:8px;margin-top:0em;margin-bottom:0em;background-color:#EEE;border:solid 1px;width:100px;position:absolute;left:2px; }
+.example_title { font-weight:bold;text-align:center;margin-top:0em;margin-bottom:0em; }
+.model_img1 { width:80px;height:60px;cursor:pointer;position:absolute;top:20px;left:140px; }
+.model_img2 { width:70px;height:70px;cursor:pointer;position:absolute;top:15px;left:365px; }
+.model_img3 { width:150px;height:100px;cursor:pointer;margin-top:30px;margin-left:10px; }
+.title { text-align:center; }
+
+.datasel_div { margin:0px;padding:0px;background-color:#EEE;height:40px;border:solid 1px;position:relative;text-align:center; }
+.dataset_div { margin:10px;padding:30px;background-color:#EEE;height:360px;border:solid 1px;position:relative;text-align:center; }
+
+.datasus_file_box { background-color:#EEE;height:300px;border:solid 1px;position:relative;text-align:center; }
+.datasus_file_div { overflow-y:auto; }
+.datasus_file_row { margin:5px;padding:5px;text-align:center; }
+
+.data_acquisition_row { width:100%;height:430px;margin:auto; }
+.data_acquisition_col { background-color:#EEE;height:420px;border:solid 1px;position:relative; }
+.data_acquisition_box { background-color:#FFF;height:140px;margin:3px;border:solid 1px;overflow-y:scroll;font-size:10px; }
+.data_acquisition_textarea { background-color:#FFF;text-align:left;width:100%;height:100%;font-size:10px; }
+
+.desc_stats_fig { width:95%;height:85%;overflow:scroll; }
+
+#dataset_slicing { font-weight:normal;cursor:pointer;position:absolute;top:55px;left:32px; }
+#slicing { width:90px;height:70px;cursor:pointer;position:absolute;top:0px;left:20px; }
+#modeling_diagram { position:absolute;left:0px;top:50px;border:1px solid;background-color:#DDD;margin:3px;width:1282px;height:430px; }
+#arrow_1 { left:80px; }
+#arrow_2 { left:5px; }
+#arrow_3 { left:80px; }
+#arrow_4 { left:5px; }
+#arrow_5 { left:80px; }
+#arrow_6 { left:5px; }
+#arrow_slice { left:-5px; }
+#modeling_box { border:solid 2px;cursor:pointer;margin-top:10px;padding:0px;position:relative;height:140px;background-color:#EEE; }
+#box_title { height:20px;margin:0px;text-align:center; }
+#box_content { margin-left:0px;padding:0px;position:relative; }
+#box_arrow_1 { left:2px; }
+#box_arrow_2 { left:105px; }
+#box_arrow_3 { left:210px; }
+#box_arrow_4 { left:320px; }
+#box_arrow_5 { left:405px; }
+#example_filter { top:150px; }
+#example_feature { top:250px; }
+#margin { position:absolute;left:18px; }
+#model_img1 { position:absolute;left:125px; }
+#model_img2 { position:absolute;left:335px; }
+#copula { width:85px;height:65px;cursor:pointer;position:absolute;top:15px;left:230px; }
+#datasel_sel { margin-left:20px; }
+
+.dw-row {
+	position: relative;
+	width: 100%;
+	border: solid 1px;
+	background-color: #FFF;
+	margin: 2px;
+}
+
+.modal {
+    display:    block;/*none;*/
+    position:   absolute;/*fixed;*/
+    z-index:    1000;
+    top:        300px;
+    left:       600px;
+    height:     10%;
+    width:      10%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://i.stack.imgur.com/FhHRx.gif') 
+                50% 50% 
+                no-repeat;
+}
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading .modal {
+    overflow: hidden;
+    display: block;
+}
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+/*body.loading .modal {
+    display: block;
+}*/
