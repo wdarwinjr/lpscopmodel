@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>lpscopmodel</title>
+		<!-- favicon to avoid favicon error in browsers -->
+		<link rel="shortcut icon" href="{% static '/images/favicon.ico' %}" type="image/x-icon" />
+		<!-- jquery - link cdn -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<!-- bootstrap - link cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<!-- stylesheet files -->
+		<link rel="stylesheet" type="text/css" href="{% static 'css/lpscopmodelapp-style.css' %}">
+		<!-- js functions -->
+		<script src="{% static 'js/lpscopmodel_app.js' %}"></script>
+		<script src="{% static 'js/index.js' %}"></script>
+		<script type="text/javascript">
+			var csrftoken = getCookie('csrftoken');
+		</script>
+	</head>
+
+	<!--***** GLOBAL VARIABLES MANAGEMENT *****-->
+	<script>
+		//*** Global Variables ***//
+		var static_dir_init = "{% static '' %}"; //proj_dir+'uspdarwinapp/static/';
+		var proj_name_init = '{{ proj_name }}';
+		var proj_list_init = {{ proj_list|safe }};
+	</script>
+
+	<body>
+	 	{% csrf_token %}
+
+		<div id='banner' style="text-align:center;width:100%;"></div>
+	    <div id="container" class="container frame"></div>
+	    <!--<div id="waiting" class="modal">< !-- waiting processing animation - ></div> -->
+
+		<script type="text/javascript">initPage();</script>
+
+	</body>
+</html>
